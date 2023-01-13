@@ -1,0 +1,22 @@
+{
+  "dependencies": {
+    "node-sass": "^8.0.0"
+  },
+  "name": "coursework",
+  "version": "1.0.0",
+  "description": "Coursework for front-end course",
+  "main": "index.js",
+  "devDependencies": {},
+  "scripts": {
+    "sass": "node-sass -w scss/ -o dist/css/ --recursive"
+  },
+  "repository": {
+    "type": "git",
+    "url": ".git/Coursework"
+  },
+  "keywords": [
+    "coursework"
+  ],
+  "author": "arakkolainen",
+  "license": "ISC"
+}
