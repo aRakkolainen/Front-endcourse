@@ -1,10 +1,11 @@
-$primary-color: #444;
-$secondary-color: #eece1a;
+// This file is made by following the tutorial by Traversy Media, not my own code!
+@import 'config';
 * {
     box-sizing: border-box;
 
 }
 body {
+    @include background;
     background: $primary-color;
     color: #fff;
     height: 100%;
@@ -15,8 +16,8 @@ body {
 
 // Headings
 h1, h2, h3 {
-    margin:0;
-    font-weight:400;
+    margin: 0;
+    font-weight: 400;
     &.lg-heading{
         font-size: 6rem;
     }
@@ -26,6 +27,7 @@ h1, h2, h3 {
         background: rgba(lighten($primary-color, 2),0.5);
 
     }
+}
     a {
         color: #fff;
         text-decoration: none;
@@ -43,6 +45,22 @@ h1, h2, h3 {
     main {
         padding: 4rem;
         height: 100%;
+        .icons {
+            margin-top: 1rem;
+
+            a {
+                padding: 0.4rem;
+                &:hover {
+                    color: $secondary-color;
+                    @include easeOut();
+                }
+            }
+        }
+        &#home {
+            overflow: hidden;
+            h1 {
+                margin-top: 20vh; 
+            }
+        }
     }
     
-}
